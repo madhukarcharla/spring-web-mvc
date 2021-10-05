@@ -20,10 +20,16 @@ public class UserDao {
 		params.addValue("pwd", user.getPassword());
 		params.addValue("pn", user.getPhoneNumber());
 		params.addValue("un", user.getUserName());
-		params.addValue("id", Math.random());
+		
+		
+		Integer maxId = namedParameterJdbcTemplate.queryForObject("select max(id) from user", new MapSqlParameterSource(), Integer.class);
+		
+		params.addValue("id", maxId+1);
 		
 		namedParameterJdbcTemplate.update("insert into user(id, full_name, password, phone_number,user_name) values (:id, :fn, :pwd, :pn, :un)"
 						,params);
 	}
+	
+	
 
 }

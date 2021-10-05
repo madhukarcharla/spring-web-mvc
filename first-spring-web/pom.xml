@@ -5,11 +5,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>first</groupId>
-	<artifactId>SpringMVC_demo</artifactId>
+	<artifactId>first-spring-web</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
 
-	<name>SpringMVC_demo</name>
+	<name>first-spring-web</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -100,7 +100,7 @@
 	</repositories>
 
 	<build>
-		<finalName>SpringMVC_demo</finalName>
+		<finalName>first-spring-web</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
