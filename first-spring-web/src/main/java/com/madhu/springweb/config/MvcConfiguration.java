@@ -1,7 +1,5 @@
 package com.madhu.springweb.config;
 
-import java.util.jar.Attributes.Name;
-
 import javax.sql.DataSource;
 
 import org.springframework.context.annotation.Bean;
@@ -19,7 +17,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import com.madhu.springweb.controller.LoginValidator;
 
 @Configuration
-@ComponentScan(basePackages = "first.SpringMVC_demo")
+@ComponentScan(basePackages = "com.madhu.springweb")
 @EnableWebMvc
 public class MvcConfiguration implements WebMvcConfigurer {
 

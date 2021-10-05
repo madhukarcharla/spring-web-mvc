@@ -8,7 +8,6 @@
 	<artifactId>first-spring-web</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
-
 	<name>first-spring-web</name>
 	<url>http://maven.apache.org</url>
 
